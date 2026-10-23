@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>HPM — Wireframe Index</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hub-header { background: var(--black); color: var(--white); padding: 56px 32px; }
+    .hub-header h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); margin-bottom: 8px; }
+    .hub-header p { color: #aaa; max-width: 600px; }
+    .hub-meta { font-size: 12px; color: #666; margin-top: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--rule); }
+    .page-card { background: var(--white); padding: 28px; }
+    .page-card:hover { background: #fafafa; }
+    .page-num { font-size: 11px; font-weight: 700; color: var(--light); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; display: block; }
+    .page-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; text-decoration: none; color: var(--black); display: block; }
+    .page-name:hover { text-decoration: underline; }
+    .page-goal { font-size: 13px; color: var(--mid); line-height: 1.5; }
+    .page-slug { font-size: 12px; color: var(--light); margin-top: 10px; font-family: monospace; }
+    .page-link { display: inline-block; margin-top: 16px; font-size: 13px; font-weight: 600; border: 1.5px solid var(--black); padding: 6px 14px; text-decoration: none; color: var(--black); }
+    .page-link:hover { background: var(--black); color: var(--white); }
+    .sitemap { padding: 40px 32px; border-bottom: 1px solid var(--rule); }
+    .sitemap-inner { max-width: 1120px; margin: 0 auto; }
+    .sitemap h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: var(--mid); margin-bottom: 20px; }
+    .sitemap-tree { font-size: 14px; font-family: monospace; color: var(--dark); line-height: 2; }
+    .sitemap-tree .level-1 { font-weight: 700; }
+    .sitemap-tree .level-2 { padding-left: 24px; color: var(--mid); }
+  </style>
+</head>
+<body>
+
+<div class="hub-header">
+  <div style="max-width:1120px; margin:0 auto;">
+    <h1>Home Properties &amp; More</h1>
+    <p>B&amp;W wireframes for all main pages. Click any page below to review its layout and content structure.</p>
+    <div class="hub-meta">Client: John DiMarco &nbsp;·&nbsp; Writer: Amanda Lien &nbsp;·&nbsp; Textile Creative Studios &nbsp;·&nbsp; 2026</div>
+  </div>
+</div>
+
+<div class="sitemap">
+  <div class="sitemap-inner">
+    <h2>Site Map</h2>
+    <div class="sitemap-tree">
+      <div class="level-1">/ &nbsp; Home</div>
+      <div class="level-1">/about-us/ &nbsp; About Us</div>
+      <div class="level-1">/services/ &nbsp; Services</div>
+      <div class="level-2">↳ For Landlords</div>
+      <div class="level-2">↳ For Renters</div>
+      <div class="level-2">↳ For Sellers</div>
+      <div class="level-1">/listings/ &nbsp; Listings</div>
+      <div class="level-2">↳ /listings/[address]/ &nbsp; Individual Listing</div>
+      <div class="level-1">/blog/ &nbsp; Latest Real Estate News</div>
+      <div class="level-2">↳ /blog/[post-slug]/ &nbsp; Article</div>
+      <div class="level-1">/contact/ &nbsp; Contact Us</div>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--rule); height: 1px;"></div>
+
+<div class="pages-grid">
+
+  <div class="page-card">
+    <span class="page-num">Page 1</span>
+    <a class="page-name" href="home.html">Home</a>
+    <p class="page-goal">Tell a first-time visitor within five seconds what HPM is, which path is theirs, then route them.</p>
+    <span class="page-slug">/</span>
+    <br><a class="page-link" href="home.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 2</span>
+    <a class="page-name" href="about.html">About Us</a>
+    <p class="page-goal">Make a stranger trust a company that has no track record yet using a specific origin story and real, named people.</p>
+    <span class="page-slug">/about-us/</span>
+    <br><a class="page-link" href="about.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 3</span>
+    <a class="page-name" href="services.html">Services</a>
+    <p class="page-goal">Show every service tier with a price. If you don't see what you need, ask.</p>
+    <span class="page-slug">/services/</span>
+    <br><a class="page-link" href="services.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 4</span>
+    <a class="page-name" href="listings.html">Listings</a>
+    <p class="page-goal">Let people browse and filter, and capture an email without demanding a phone number.</p>
+    <span class="page-slug">/listings/</span>
+    <br><a class="page-link" href="listings.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 5</span>
+    <a class="page-name" href="listing-detail.html">Listing Template</a>
+    <p class="page-goal">Give someone everything they need to decide whether to inquire, and make the fee situation unmissable.</p>
+    <span class="page-slug">/listings/[address]/</span>
+    <br><a class="page-link" href="listing-detail.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 6</span>
+    <a class="page-name" href="news.html">Latest Real Estate News</a>
+    <p class="page-goal">Be the place a small Boston landlord checks when rules change.</p>
+    <span class="page-slug">/blog/</span>
+    <br><a class="page-link" href="news.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 7</span>
+    <a class="page-name" href="post.html">Article Template</a>
+    <p class="page-goal">Readable, clean article view. No byline per client request.</p>
+    <span class="page-slug">/blog/[post-slug]/</span>
+    <br><a class="page-link" href="post.html">View wireframe →</a>
+  </div>
+
+  <div class="page-card">
+    <span class="page-num">Page 8</span>
+    <a class="page-name" href="contact.html">Contact Us</a>
+    <p class="page-goal">Make it obvious that a human will respond, and give people more than one way to reach one.</p>
+    <span class="page-slug">/contact/</span>
+    <br><a class="page-link" href="contact.html">View wireframe →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

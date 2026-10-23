@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Article Template — Home Properties &amp; More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; align-items: start; }
+    @media (max-width: 900px) { .article-layout { grid-template-columns: 1fr; } }
+    .article-sidebar { position: sticky; top: 80px; }
+    .article-body h2 { font-size: 24px; margin: 32px 0 12px; }
+    .article-body h3 { font-size: 19px; margin: 24px 0 10px; }
+    .article-body p { font-size: 17px; line-height: 1.7; margin-bottom: 20px; max-width: none; }
+    .article-body ul, .article-body ol { font-size: 16px; line-height: 1.7; margin: 0 0 20px 24px; color: var(--dark); }
+    .article-body li { margin-bottom: 8px; }
+    .article-body blockquote { border-left: 3px solid var(--black); padding: 12px 20px; margin: 24px 0; color: var(--dark); font-style: italic; background: var(--bg-section); }
+    .sidebar-widget { border: 1px solid var(--border); padding: 20px; margin-bottom: 20px; }
+    .sidebar-widget h5 { margin-bottom: 12px; }
+    .sidebar-widget ul { list-style: none; margin: 0; }
+    .sidebar-widget li { margin-bottom: 10px; }
+    .sidebar-widget a { font-size: 13px; color: var(--dark); }
+    .related-card { border-bottom: 1px solid var(--rule); padding: 12px 0; }
+    .related-card:last-child { border-bottom: none; }
+    .related-card .cat { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--light); display: block; margin-bottom: 4px; }
+    .related-card a { font-size: 14px; font-weight: 600; color: var(--black); }
+  </style>
+</head>
+<body>
+
+<div class="wf-banner">
+  <div><strong>Wireframe</strong> &nbsp;·&nbsp; Page 7: Article Template &nbsp;·&nbsp; /blog/[post-slug]/</div>
+  <nav>
+    <a href="news.html">← News</a>
+    <a href="index.html">Index</a>
+    <a href="contact.html">Contact →</a>
+  </nav>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">HP&amp;M</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="listings.html">Listings</a>
+    <a href="news.html" class="active">News</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- Breadcrumb -->
+    <div style="font-size:13px; color:var(--mid); margin-bottom:24px;">
+      <a href="news.html" style="color:var(--mid);">News</a> &nbsp;/&nbsp; Rules &amp; Regulations
+    </div>
+
+    <div class="article-layout">
+
+      <!-- Article content -->
+      <article>
+        <span class="badge" style="margin-bottom:14px; display:inline-block;">Rules &amp; Regulations</span>
+        <h1 style="font-size:clamp(24px,4vw,40px); line-height:1.15; margin-bottom:16px;">Massachusetts broker fee law: what changed in 2024 and what it means for Boston renters</h1>
+
+        <div style="font-size:13px; color:var(--light); margin-bottom:32px; padding-bottom:20px; border-bottom:1px solid var(--rule);">
+          Published October 1, 2024 &nbsp;·&nbsp; Last reviewed October 15, 2024
+          <span class="wf-note" style="display:inline-block; margin-left:12px;">No bylines — per client request.</span>
+        </div>
+
+        <!-- Hero image -->
+        <div class="img-placeholder" style="height:320px; margin-bottom:32px;">Article hero image — 1200×630px (optional)</div>
+
+        <!-- Standfirst / Intro -->
+        <p style="font-size:19px; font-weight:500; color:var(--black); line-height:1.6;">The short version: if you didn't hire the broker, you don't owe the broker. Here's what that actually looks like in practice, and what's still murky.</p>
+
+        <!-- Article body -->
+        <div class="article-body">
+          <h2>What the law actually says</h2>
+          <p>[Body copy paragraph 1. This template shows the article structure; actual content is written by the HPM team or Amanda Lien.]</p>
+          <p>[Body copy paragraph 2. Plain language, specific numbers where possible. No jargon. Tone: knowledgeable, transparent, friendly.]</p>
+
+          <blockquote>Key pull quote or callout text goes here — something worth highlighting for a skimmer.</blockquote>
+
+          <h2>What it means if you're renting</h2>
+          <p>[Body copy paragraph 3.]</p>
+          <ul>
+            <li>Bullet point illustrating a specific scenario or rule</li>
+            <li>Another concrete example</li>
+            <li>A clarification or caveat</li>
+          </ul>
+          <p>[Body copy paragraph 4.]</p>
+
+          <h2>What's still unclear</h2>
+          <p>[Body copy paragraph 5. HPM house style: acknowledge what's genuinely ambiguous rather than pretending certainty.]</p>
+          <p>[Body copy paragraph 6.]</p>
+
+          <h3>The bottom line</h3>
+          <p>[Summary paragraph. One or two sentences.]</p>
+
+          <!-- End CTA -->
+          <div style="border: 2px solid var(--black); padding: 24px; margin-top: 40px;">
+            <h4 style="margin-bottom:8px;">Questions about your specific situation?</h4>
+            <p style="font-size:14px; max-width:none;">We're happy to give you a straight answer. Email us and a person will write back.</p>
+            <a href="contact.html" class="btn btn-sm btn-filled" style="margin-top:12px; display:inline-block;">Get in touch →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+
+        <div class="sidebar-widget">
+          <h5>Browse by category</h5>
+          <ul>
+            <li><a href="news.html">Rules &amp; Regulations</a></li>
+            <li><a href="news.html">Boston Neighborhoods</a></li>
+            <li><a href="news.html">For Landlords</a></li>
+            <li><a href="news.html">For Renters &amp; Buyers</a></li>
+            <li><a href="news.html">Market Notes</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h5>Related articles</h5>
+          <div class="related-card">
+            <span class="cat">For Landlords</span>
+            <a href="post.html">Security deposits in Massachusetts: the rules most landlords get wrong</a>
+          </div>
+          <div class="related-card">
+            <span class="cat">For Renters &amp; Buyers</span>
+            <a href="post.html">What "no broker fee" actually means – and when to be skeptical</a>
+          </div>
+          <div class="related-card">
+            <span class="cat">Market Notes</span>
+            <a href="post.html">Boston's two-family market: Q3 2024 snapshot</a>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--border); padding: 20px; background: var(--bg-section);">
+          <h5 style="margin-bottom:8px;">Stay current</h5>
+          <p style="font-size:13px; color:var(--mid); margin-bottom:16px;">Get new articles when rules change.</p>
+          <input class="form-input" type="email" placeholder="your@email.com" style="margin-bottom:10px;">
+          <button class="btn btn-sm btn-filled" style="width:100%;">Subscribe</button>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Home Properties &amp; More</div>
+        <p class="footer-tagline">Flat-fee leasing, sales, and property management for Boston property owners.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News &amp; Insights</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Landlords</h5>
+        <ul>
+          <li><a href="services.html#landlords">List it yourself</a></li>
+          <li><a href="services.html#landlords">List &amp; lease it</a></li>
+          <li><a href="services.html#landlords">Full service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Renters &amp; Buyers</h5>
+        <ul>
+          <li><a href="listings.html">Search listings</a></li>
+          <li><a href="services.html#renters">Help with the search</a></li>
+          <li><a href="services.html#sellers">For sellers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Fair Housing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2024 Home Properties &amp; More</div>
+      <div class="footer-legal">
+        <span class="footer-eho">Equal Housing Opportunity</span>
+        <span style="font-size:11px; color:var(--light);">MA Brokerage License #[TBD]</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

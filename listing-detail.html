@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Listing Template — Home Properties &amp; More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .listing-layout { display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: start; }
+    @media (max-width: 900px) { .listing-layout { grid-template-columns: 1fr; } }
+    .listing-sidebar { position: sticky; top: 80px; border: 2px solid var(--black); padding: 28px; }
+    .listing-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 32px; }
+    .listing-photos .main { grid-column: 1 / -1; }
+    .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; border: 1px solid var(--rule); padding: 20px; }
+    .spec { text-align: center; }
+    .spec-val { font-size: 22px; font-weight: 700; }
+    .spec-label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--mid); margin-top: 4px; }
+    .fee-notice { border: 2px solid var(--black); padding: 16px 20px; margin: 24px 0; display: flex; align-items: center; gap: 16px; }
+    .fee-notice-icon { font-size: 24px; flex-shrink: 0; }
+    .details-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 16px; }
+    .details-table tr { border-bottom: 1px solid var(--rule); }
+    .details-table td { padding: 10px 0; }
+    .details-table td:first-child { color: var(--mid); width: 40%; }
+  </style>
+</head>
+<body>
+
+<div class="wf-banner">
+  <div><strong>Wireframe</strong> &nbsp;·&nbsp; Page 5: Listing Template &nbsp;·&nbsp; /listings/[address]/</div>
+  <nav>
+    <a href="listings.html">← Listings</a>
+    <a href="index.html">Index</a>
+    <a href="news.html">News →</a>
+  </nav>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">HP&amp;M</a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="listings.html" class="active">Listings</a>
+    <a href="news.html">News</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- Breadcrumb -->
+    <div style="font-size:13px; color:var(--mid); margin-bottom:20px;">
+      <a href="listings.html" style="color:var(--mid);">Listings</a> &nbsp;/&nbsp; Jamaica Plain &nbsp;/&nbsp; 123 Example Street
+    </div>
+
+    <div class="listing-layout">
+
+      <!-- Left: Listing Content -->
+      <div>
+        <!-- Photos -->
+        <div class="listing-photos">
+          <div class="main img-placeholder" style="height:340px;">Main photo — 1200×800px</div>
+          <div class="img-placeholder" style="height:160px;">Photo 2 — 600×400px</div>
+          <div class="img-placeholder" style="height:160px;">Photo 3 — 600×400px</div>
+        </div>
+
+        <!-- Eyebrow + Header -->
+        <div>
+          <span class="badge badge-filled" style="margin-bottom:12px; display:inline-block;">For Rent</span>
+          <h1 style="font-size:clamp(24px,4vw,38px); margin-bottom:8px;">123 Example Street</h1>
+          <div style="font-size:17px; color:var(--mid); margin-bottom:16px;">Jamaica Plain, Boston</div>
+
+          <!-- Spec row -->
+          <div class="spec-grid">
+            <div class="spec">
+              <div class="spec-val">$2,400</div>
+              <div class="spec-label">per month</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">2 bd / 1 ba</div>
+              <div class="spec-label">beds / baths</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">850 sq ft</div>
+              <div class="spec-label">square feet</div>
+            </div>
+          </div>
+
+          <!-- Fee notice — PROMINENT -->
+          <div class="fee-notice">
+            <div class="fee-notice-icon">$</div>
+            <div>
+              <strong>Fees: First month, last month, security deposit. No broker fee.</strong>
+              <div style="font-size:13px; color:var(--mid); margin-top:4px;">This is what you will pay. There are no hidden charges. — <em>Karla to approve final wording.</em></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About this property -->
+        <div style="margin-top:32px;">
+          <h2 style="font-size:22px; margin-bottom:16px;">About this property</h2>
+          <p>[Property description — 100–250 words. Written by owner via guided prompt or by HPM. Recommended minimum length enforced at submission.]</p>
+          <p>[Property type] · [Year built] · [Heat and utilities] · [Parking] · [Laundry] · [Pets] · Available [date] · [Lease term]</p>
+          <span class="wf-note">↑ Recommended inclusions per doc. Format TBD (inline or table).</span>
+        </div>
+
+        <!-- Details table -->
+        <div style="margin-top:32px;">
+          <h3 style="font-size:18px; margin-bottom:4px;">Property details</h3>
+          <table class="details-table">
+            <tr><td>Property type</td><td>[e.g. Apartment / Condo / Two-family]</td></tr>
+            <tr><td>Year built</td><td>[Year]</td></tr>
+            <tr><td>Heat &amp; utilities</td><td>[e.g. Gas heat, tenant pays electric]</td></tr>
+            <tr><td>Parking</td><td>[e.g. Street parking, 1 off-street spot included]</td></tr>
+            <tr><td>Laundry</td><td>[e.g. In-unit / shared / none]</td></tr>
+            <tr><td>Pets</td><td>[e.g. Cats OK, no dogs]</td></tr>
+            <tr><td>Available date</td><td>[Date]</td></tr>
+            <tr><td>Lease term</td><td>[e.g. 12 months]</td></tr>
+            <tr><td>Square footage</td><td>850 sq ft</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Right: Sidebar / Inquiry Form -->
+      <div class="listing-sidebar">
+        <h3 style="font-size:18px; margin-bottom:6px;">Interested in this property?</h3>
+        <p style="font-size:13px; color:var(--mid); margin-bottom:24px;">Send a note. A person will get back to you within one business day.</p>
+
+        <div class="form-field">
+          <label class="form-label">Name</label>
+          <input class="form-input" type="text" placeholder="Your name">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" placeholder="you@example.com">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Phone <span class="optional">(optional)</span></label>
+          <input class="form-input" type="tel" placeholder="(617) 555-0000">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Questions, preferred showing times, anything else…" style="min-height:90px;"></textarea>
+        </div>
+        <button class="btn btn-filled" style="width:100%;">Send inquiry</button>
+
+        <div style="margin-top:20px; padding-top:20px; border-top:1px solid var(--rule);">
+          <span style="font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--mid); display:block; margin-bottom:8px;">Listed by</span>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div class="img-placeholder" style="height:44px; width:44px; flex-shrink:0;">Photo</div>
+            <div>
+              <div style="font-size:14px; font-weight:600;">[Owner Name]</div>
+              <div style="font-size:12px; color:var(--mid);">Property owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Home Properties &amp; More</div>
+        <p class="footer-tagline">Flat-fee leasing, sales, and property management for Boston property owners.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News &amp; Insights</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Landlords</h5>
+        <ul>
+          <li><a href="services.html#landlords">List it yourself</a></li>
+          <li><a href="services.html#landlords">List &amp; lease it</a></li>
+          <li><a href="services.html#landlords">Full service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Renters &amp; Buyers</h5>
+        <ul>
+          <li><a href="listings.html">Search listings</a></li>
+          <li><a href="services.html#renters">Help with the search</a></li>
+          <li><a href="services.html#sellers">For sellers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Fair Housing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2024 Home Properties &amp; More</div>
+      <div class="footer-legal">
+        <span class="footer-eho">Equal Housing Opportunity</span>
+        <span style="font-size:11px; color:var(--light);">MA Brokerage License #[TBD]</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
